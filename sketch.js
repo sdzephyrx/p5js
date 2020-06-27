@@ -25,24 +25,24 @@ const matrizInimigoVoador=[[0,0],[200, 0],[400, 0],[0, 150],[200, 150],[400, 150
 const inimigos=[];
 
 function preload() {
-  imagemCenario = loadImage('cenario/floresta.png');
-  imagemGameOver = loadImage('cenario/game-over.png');
-  imagemPersonagem = loadImage('personagem/hips.png');
-  imagemInimigo = loadImage('inimigos/gotinha.png');
-  imagemInimigoGrande = loadImage('inimigos/troll.png');
-  imagemInimigoVoador = loadImage('inimigos/gotinha-voadora.png');
-  somDoJogo=loadSound('musica/trilha_jogo.mp3');
-  somDoPulo=loadSound('musica/somPulo.mp3');
+  imagemCenario = loadImage('/cenario/floresta.png');
+  imagemGameOver = loadImage('/cenario/game-over.png');
+  imagemPersonagem = loadImage('/personagem/hips.png');
+  imagemInimigo = loadImage('/inimigos/gotinha.png');
+  imagemInimigoGrande = loadImage('/inimigos/troll.png');
+  imagemInimigoVoador = loadImage('/inimigos/gotinha-voadora.png');
+  somDoJogo=loadSound('/musica/trilha_jogo.mp3');
+  somDoPulo=loadSound('/musica/somPulo.mp3');
 }
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
   cenario= new Cenario(imagemCenario, 3);
-  cenario= new Cenario(imagemCenario, 3);
   pontuacao= new Pontuacao();
+  
   personagem= new Personagem(matrizPersonagem, imagemPersonagem, 0,30,220,270,220,270);
   const inimigo= new Inimigo(matrizInimigo, imagemInimigo, width-52, 30, 104, 104,104, 104, 10, 100);
-  const inimigoGrande= new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width*2, 0, 400, 400, 350, 350,10,1500);
+  const inimigoGrande= new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width*2, 0, 400, 400, 350, 350,10,2000);
   const inimigoVoador= new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width*1.5, height*0.5, 200, 150, 180, 125,10,1000);
   
   inimigos.push(inimigo);
