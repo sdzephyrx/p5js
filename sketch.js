@@ -56,13 +56,11 @@ function setup() {
 function keyPressed(){
   if(key === 'ArrowUp'){
     personagem.pula();
-    somDoPulo.play();
   }
 }
 
 function mousePressed(){
     personagem.pula();
-    somDoPulo.play();
 }
 
 function draw() {
@@ -87,7 +85,6 @@ function draw() {
       //pontuacao.pontos-=10;
       noLoop();
       somDoJogo.stop();
-      
     }
 
   }); 
