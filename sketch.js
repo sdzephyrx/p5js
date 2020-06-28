@@ -25,14 +25,14 @@ const matrizInimigoVoador=[[0,0],[200, 0],[400, 0],[0, 150],[200, 150],[400, 150
 const inimigos=[];
 
 function preload() {
-  imagemCenario = loadImage('/cenario/floresta.png');
-  imagemGameOver = loadImage('/cenario/game-over.png');
-  imagemPersonagem = loadImage('/personagem/hips.png');
-  imagemInimigo = loadImage('/inimigos/gotinha.png');
-  imagemInimigoGrande = loadImage('/inimigos/troll.png');
-  imagemInimigoVoador = loadImage('/inimigos/gotinha-voadora.png');
-  somDoJogo=loadSound('/musica/trilha_jogo.mp3');
-  somDoPulo=loadSound('/musica/somPulo.mp3');
+  imagemCenario = loadImage('cenario/floresta.png');
+  imagemGameOver = loadImage('cenario/game-over.png');
+  imagemPersonagem = loadImage('personagem/hips.png');
+  imagemInimigo = loadImage('inimigos/gotinha.png');
+  imagemInimigoGrande = loadImage('inimigos/troll.png');
+  imagemInimigoVoador = loadImage('inimigos/gotinha-voadora.png');
+  somDoJogo=loadSound('musica/trilha_jogo.mp3');
+  somDoPulo=loadSound('musica/somPulo.mp3');
 }
 
 function setup() {
