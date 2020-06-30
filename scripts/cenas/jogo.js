@@ -20,7 +20,41 @@ class Jogo{
     keyPressed(key){
         if(key === 'ArrowUp'){
             personagem.pula();
+        }
+    }
+
+    draw() {
+        cenario.exibe();
+        cenario.move();
+        pontuacao.exibe();
+      
+        personagem.exibe();
+        personagem.aplicaGravidade();
+        
+        circle(mouseX,mouseY,10);
+      
+        const inimigo= inimigos[this.inimigoAtual];
+        const inimigoVisivel= inimigo.x< -inimigo.largura;
+        
+        inimigo.exibe();
+        inimigo.move();
+        pontuacao.adicionarPonto();
+        
+        if(inimigoVisivel){
+            this.inimigoAtual++;
+      
+          if(this.inimigoAtual.lenght){
+            this.inimigoAtual=0;
           }
+          inimigo.velocidade=parseInt(random(20,40));
+        }
+        
+        if(personagem.estaColidindo(inimigo)){
+          image(imagemGameOver,width/2-200,height/3)
+          //console.log('Hit');
+          //pontuacao.pontos-=10;
+          noLoop();
+          somDoJogo.stop();
         }
     }
 }

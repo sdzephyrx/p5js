@@ -1,4 +1,6 @@
 function preload() {
+    imagemTelaInicial=loadImage('cenario/telaincial.png');
+    fonteTelaIncial=loadFont('cenario/fonteTelaInicial.otf');
     imagemCenario = loadImage('cenario/floresta.png');
     imagemGameOver = loadImage('cenario/game-over.png');
     imagemPersonagem = loadImage('personagem/hips.png');
