@@ -1,6 +1,6 @@
 function preload() {
-    imagemTelaInicial=loadImage('cenario/telaincial.png');
-    fonteTelaIncial=loadFont('cenario/fonteTelaInicial.otf');
+    imagemTelaInicial=loadImage('cenario/telainicial.png');
+    fonteTelaInicial=loadFont('cenario/fonteTelaInicial.otf');
     imagemCenario = loadImage('cenario/floresta.png');
     imagemGameOver = loadImage('cenario/game-over.png');
     imagemPersonagem = loadImage('personagem/hips.png');
@@ -10,4 +10,3 @@ function preload() {
     somDoJogo=loadSound('musica/trilha_jogo.mp3');
     somDoPulo=loadSound('musica/somPulo.mp3');
   }
-  

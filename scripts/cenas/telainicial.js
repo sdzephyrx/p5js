@@ -6,6 +6,7 @@ class TelaInicial{
     draw(){
         this._imagemDeFundo();
         this._texto()
+        this._butao();
     }
 
     _imagemDeFundo(){
@@ -14,7 +15,12 @@ class TelaInicial{
 
     _texto(){
         textFont(fonteTelaInicial);
-        textSize(50);
-        text('Hispta',width/2,height/2);
+        textSize(100);     
+        textAlign(CENTER);   
+        text('Hispta',windowWidth/2,windowHeight/2);
+    }
+
+    _butao(){
+        botaoGerenciador.draw();
     }
 }

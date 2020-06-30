@@ -5,6 +5,7 @@ let fonteTelaInicial;
 let imagemGameOver;
 let cenario;
 let pontuacao;
+let botaoGerenciador;
 
 let imagemPersonagem;
 let personagem;
@@ -16,7 +17,7 @@ let imagemInimigoVoador;
 let inimigoVoador;
 
 let cenas;
-let cenaAtual='tela inicial';
+let cenaAtual='telaInicial';
 let telaInicial;
 
 let somDoJogo;
