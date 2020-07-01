@@ -21,6 +21,7 @@ class TelaInicial{
     }
 
     _butao(){
+        botaoGerenciador.y=height/7*5;
         botaoGerenciador.draw();
     }
 }

@@ -4,9 +4,9 @@ class Pontuacao{
   }
   
   exibe(){
-    textAlign(LEFT)
+    textAlign(RIGHT)
     textSize(50);
-    text(this.pontos, width*0.1, 50);
+    text(this.pontos, width*0.9, 50);
   }
   
   adicionarPonto(){

@@ -6,6 +6,9 @@ let imagemGameOver;
 let cenario;
 let pontuacao;
 let botaoGerenciador;
+let imagemVida;
+let vida;
+let fita;
 
 let imagemPersonagem;
 let personagem;

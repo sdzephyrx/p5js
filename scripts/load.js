@@ -9,4 +9,7 @@ function preload() {
     imagemInimigoVoador = loadImage('inimigos/gotinha-voadora.png');
     somDoJogo=loadSound('musica/trilha_jogo.mp3');
     somDoPulo=loadSound('musica/somPulo.mp3');
+    imagemVida=loadImage('cenario/coracao.png');
+    fita=loadJSON('fita/fita.json');
+    
   }
