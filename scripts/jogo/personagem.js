@@ -38,9 +38,9 @@ class Personagem extends Animacao{
     if(this.invencivel){
       return false;
     }
-    noFill();
-    rect(this.x,this.y,this.largura,this.altura);
-    rect(inimigo.x,inimigo.y,inimigo.largura,inimigo.altura);
+    //noFill();
+    //rect(this.x,this.y,this.largura,this.altura);
+    //rect(inimigo.x,inimigo.y,inimigo.largura,inimigo.altura);
     const precisao= 0.7;
     const colisao= collideRectRect(this.x, this.y, this.largura* precisao, this.altura* precisao, inimigo.x, inimigo.y, inimigo.largura* precisao, inimigo.altura* precisao);
     
